@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Тестовое задание "Калькулятор" для It Mentor</h1>
+        <p>с применением:</p>
+        <div class="logotip">
+        <img src="./image/html.webp" alt="logo-html">
+        <img src="./image/css.webp" alt="logo-css">
+        <img src="./image/js.webp" alt="logo-js">
+        </div>
+    </header>
+
+    <div class="calculator">
+
+        <button class="btn btn-reset" onclick="clean()">C</button>
+
+        <form name="form">
+            <input id="display" name="display" type="text" placeholder="0" readonly >
+        </form>
+
+        <button class="btn" onclick="insert(7)">7</button>
+        <button class="btn" onclick="insert(8)">8</button>
+        <button class="btn" onclick="insert(9)">9</button>
+        <button class="btn btn_oper" onclick="insert('+')">+</button>
+
+        <button class="btn" onclick="insert(4)">4</button>
+        <button class="btn" onclick="insert(5)">5</button>
+        <button class="btn" onclick="insert(6)">6</button>
+        <button class="btn btn_oper" onclick="insert('-')">-</button>
+
+        <button class="btn" onclick="insert(1)">1</button>
+        <button class="btn" onclick="insert(2)">2</button>
+        <button class="btn" onclick="insert(3)">3</button>
+        <button class="btn btn_oper" onclick="insert('/')">&divide;</button>
+
+        <button class="btn" onclick="insert(0)">0</button>
+        <button class="btn" onclick="insert('.')">.</button>
+        <button class="btn btn-equal" onclick="equal()">=</button>
+        <button class="btn btn_oper" onclick="insert('*')">&times;</button>
+
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
